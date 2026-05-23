@@ -1,40 +1,40 @@
 
 ### User Register
-POST http://localhost:4000/user-api/users
+POST http://localhost:5000/user-api/users
 Content-Type: application/json
 
 {
   "firstName": "Anurag",
   "lastName": "Sharma",
-  "email": "anurag1.user@example.com",
+  "email": "anurag12.user@example.com",
   "password": "User@12345",
   "profileImageUrl": "https://example.com/avatars/user.png"
 }
 
 ### User Login
-POST http://localhost:4000/common-api/login
+POST http://localhost:5000/common-api/login
 Content-Type: application/json
 
 {
-  "email": "anurag1.user@example.com",
+  "email": "anurag12.user@example.com",
   "password": "User@12345"
 }
 
 ### Author Register
-POST http://localhost:4000/author-api/users
+POST http://localhost:5000/author-api/users
 Content-Type: application/json
 
 {
   "firstName": "Vikas",
   "lastName": "Author",
-  "email": "vikas.author1@example.com",
+  "email": "vikas.author12@example.com",
   "password": "Author@12345",
   "profileImageUrl": "https://example.com/avatars/author.png"
 }
 
 
 ### Author Register
-POST http://localhost:4000/author-api/users
+POST http://localhost:5000/author-api/users
 Content-Type: application/json
 
 {
@@ -46,22 +46,22 @@ Content-Type: application/json
 }
 
 ### Author Login
-POST http://localhost:4000/common-api/login
+POST http://localhost:5000/common-api/login
 Content-Type: application/json
 
 {
-  "email": "vikas.author1@example.com",
+  "email": "vikas.author12@example.com",
   "password": "Author@12345"
 }
 
 
 
 ### Create article (AUTHOR)
-POST http://localhost:4000/author-api/articles
+POST http://localhost:5000/author-api/articles
 Content-Type: application/json
 
 {
-  "author":"69ae8f62f68c6ea7298adfcd",
+  "author":"6a11c25b63ae70b9df3d5b86",
   "title":"test2 article",
   "category":"programming",
   "content":"content of test2 article"
@@ -70,14 +70,14 @@ Content-Type: application/json
 
 
 ###Read articles of a author
-GET http://localhost:4000/author-api/articles/69896b1934623411100da471
+GET http://localhost:5000/author-api/articles/6a11c25b63ae70b9df3d5b86
 
 
 
 
 
 ### Update article (AUTHOR)
-PUT http://localhost:4000/author-api/articles
+PUT http://localhost:5000/author-api/articles
 Content-Type: application/json
 
 {
@@ -91,30 +91,30 @@ Content-Type: application/json
 
 
 ###Delete article
-DELETE http://localhost:4000/author-api/articles/69896b1934623411100da471/698976143309ba390b761365
+DELETE http://localhost:5000/author-api/articles/69896b1934623411100da471/698976143309ba390b761365
 
 
 
 ### Logout
-GET http://localhost:4000/common-api/logout
+GET http://localhost:5000/common-api/logout
 
 
 
 ###
-GET http://localhost:4000/user-api/articles/698969a53a0d8983958d8e60
+GET http://localhost:5000/user-api/articles/698969a53a0d8983958d8e60
 
 
 
 
 ### Test res
-GET http://localhost:4000/test
+GET http://localhost:5000/test
 
 ###
-GET http://localhost:4000/hello
+GET http://localhost:5000/hello
 
 
 ### Admin Register
-POST http://localhost:4000/admin-api/register
+POST http://localhost:5000/admin-api/register
 Content-Type: application/json
 
 {
@@ -126,7 +126,7 @@ Content-Type: application/json
 }
 
 ### Admin login
-POST http://localhost:4000/common-api/login
+POST http://localhost:5000/common-api/login
 Content-Type: application/json
 
 {
@@ -135,20 +135,20 @@ Content-Type: application/json
 }
 
 ### read articles
-GET http://localhost:4000/admin-api/articles
+GET http://localhost:5000/admin-api/articles
 
 ### Get all users
-GET http://localhost:4000/admin-api/users
+GET http://localhost:5000/admin-api/users
 
 ### Block user
-PATCH http://localhost:4000/admin-api/block/698ab2dce1f9b15d0991ff2b
+PATCH http://localhost:5000/admin-api/block/698ab2dce1f9b15d0991ff2b
 
 ### Unblock user
-PATCH http://localhost:4000/admin-api/unblock/698ab2dce1f9b15d0991ff2b
+PATCH http://localhost:5000/admin-api/unblock/698ab2dce1f9b15d0991ff2b
 
 
 ###
-PUT http://localhost:4000/common-api/change-password
+PUT http://localhost:5000/common-api/change-password
 Content-Type: application/json
 
 {
@@ -158,7 +158,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:4000/common-api/login
+POST http://localhost:5000/common-api/login
 Content-Type: application/json
 
 {
@@ -167,7 +167,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:4000/user-api/articles/6989929b5d5e6b1811904aef/comments/users/698ab2dce1f9b15d0991ff2b
+PUT http://localhost:5000/user-api/articles/6989929b5d5e6b1811904aef/comments/users/698ab2dce1f9b15d0991ff2b
 Content-Type: application/json
 
 {
@@ -176,7 +176,7 @@ Content-Type: application/json
 
 
 ### add comment to article
-PUT http://localhost:4000/user-api/articles
+PUT http://localhost:5000/user-api/articles
 Content-Type: application/json
 
 {
@@ -188,7 +188,7 @@ Content-Type: application/json
 
 
 ###
-PATCH http://localhost:4000/author-api/articles/69ae90a2f1720d2dedadc134/status
+PATCH http://localhost:5000/author-api/articles/69ae90a2f1720d2dedadc134/status
 Content-Type: application/json
 
 { "isArticleActive": true }
