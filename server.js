@@ -13,7 +13,7 @@ config()  //process.env
 const app=exp()  //exp() function 
 
 app.use(cors({
-    origin: 'https://blog-app-frontend-git-main-myth-21s-projects.vercel.app/',
+    origin: 'https://blog-app-frontend-jade.vercel.app?_vercel_share=C81tIgQA0XdDAYpG0lU4t90APGhKXuvz',
     credentials: true
 }));
 //add body parser middleware
