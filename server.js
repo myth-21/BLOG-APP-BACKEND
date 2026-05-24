@@ -13,10 +13,7 @@ config()  //process.env
 const app=exp()  //exp() function 
 
 app.use(cors({
-    origin: [
-        'http://localhost:5173',
-        'https://blog-app-frontend-gilt-nu.vercel.app'
-    ],
+    origin: 'https://blog-app-frontend-gilt-nu.vercel.app',
     credentials: true
 }))
 //add body parser middleware
@@ -98,6 +95,7 @@ app.use((err, req, res, next) => {
             error: err.message,
         });
     }
+    
 
     // Default 500
     res.status(500).json({
