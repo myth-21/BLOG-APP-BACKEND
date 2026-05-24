@@ -16,7 +16,7 @@ app.use(cors({
     origin: [
         'http://localhost:5173',
         'http://localhost:5174',
-        'https://YOUR-FRONTEND-NAME.vercel.app'
+        'https://blog-app-frontend-gilt-nu.vercel.app/'
     ],
     credentials: true
 }))
