@@ -23,6 +23,9 @@ app.use(cors({
 //add body parser middleware
 app.use(exp.json())
 app.use(cookieParser())
+app.get('/test', (req,res)=>{
+    res.send('TEST ROUTE WORKING')
+})
 
 app.use('/user-api',userRoute)
 app.use('/author-api',authorRoute)
