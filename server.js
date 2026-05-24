@@ -31,10 +31,9 @@ const connectDB = async () => {
 
     try {
 
-        console.log("================================")
+        console.log("START")
         console.log("MONGO_URI VALUE:")
         console.log(process.env.MONGO_URI)
-        console.log("================================")
 
         await connect(process.env.MONGO_URI)
 
