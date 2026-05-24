@@ -12,20 +12,10 @@ config()  //process.env
 
 const app=exp()  //exp() function 
 
-const allowedOrigins = [
-    process.env.FRONTEND_URL,
-'https://blog-app-frontend-git-main-myth-21s-projects.vercel.app/'
-].filter(Boolean);
-
 app.use(cors({
-    origin: (origin, callback) => {
-        if (!origin || allowedOrigins.includes(origin)) {
-            return callback(null, true);
-        }
-        return callback(new Error(`CORS policy: origin ${origin} not allowed`));
-    },
+    origin: 'https://blog-app-frontend-git-main-myth-21s-projects.vercel.app/',
     credentials: true
-}))
+}));
 //add body parser middleware
 app.use(exp.json())
 app.use(cookieParser())
