@@ -15,7 +15,6 @@ const app=exp()  //exp() function
 app.use(cors({
     origin: [
         'http://localhost:5173',
-        'http://localhost:5174',
         'https://blog-app-frontend-gilt-nu.vercel.app/'
     ],
     credentials: true
