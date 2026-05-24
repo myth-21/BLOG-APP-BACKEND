@@ -14,8 +14,7 @@ const app=exp()  //exp() function
 
 const allowedOrigins = [
     process.env.FRONTEND_URL,
-    'https://blog-app-frontend-git-main-myth-21s-projects.vercel.app',
-    'https://blog-app-frontend-gilt-nu.vercel.app'
+'https://blog-app-frontend-git-main-myth-21s-projects.vercel.app/'
 ].filter(Boolean);
 
 app.use(cors({
