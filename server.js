@@ -36,30 +36,28 @@ app.use('/common-api',commonRouter)
 // 
 const PORT = process.env.PORT || 5000;
 
-const startServer = async () => {
+const connectDB = async () => {
     try {
 
-        console.log("Connecting DB...");
+        const dbUrl = process.env.MONGO_URI;
 
-        await connect(process.env.MONGO_URI, {
-            serverSelectionTimeoutMS: 5000
-        });
+        await connect(dbUrl);
 
         console.log("DB connection success");
 
+        app.listen(PORT, () => {
+            console.log(`Server started on port ${PORT}`);
+        });
+
     } catch (err) {
 
-        console.error("DB ERROR:");
+        console.error("DB connection failed:");
         console.error(err.message);
 
     }
-
-    app.listen(PORT, () => {
-        console.log(`Server started on port ${PORT}`);
-    });
 };
 
-startServer();
+connectDB();
 //dealing with invalid path
 app.use((req,res,next)=>{
     res.json({message:`${req.url}  is Invalid path`})
