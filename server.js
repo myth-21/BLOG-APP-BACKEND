@@ -54,9 +54,8 @@ const connectDB = async () => {
     }
 
 }
-console.log("MONGO_URI =", process.env.MONGO_URI)
+// console.log("MONGO_URI =", process.env.MONGO_URI)
 connectDB()
-
 //dealing with invalid path
 app.use((req,res,next)=>{
     res.json({message:`${req.url}  is Invalid path`})
