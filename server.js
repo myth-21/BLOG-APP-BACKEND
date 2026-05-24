@@ -27,24 +27,32 @@ app.use('/admin-api',adminRoute)
 app.use('/common-api',commonRouter)
 
 //connect to DB
-const connectDB=async()=>{
-    try{
-        console.log("START")
-console.log("MONGO_URI VALUE:")
-console.log(process.env.MONGO_URI)
+const connectDB = async () => {
 
-await connect(process.env.MONGO_URI)
+    try {
+
+        console.log("================================")
+        console.log("MONGO_URI VALUE:")
+        console.log(process.env.MONGO_URI)
+        console.log("================================")
+
+        await connect(process.env.MONGO_URI)
+
         console.log("DB connection success")
-        //start http server
+
         const PORT = process.env.PORT || 5000
 
-app.listen(PORT, () => {
-    console.log(`Server started on port ${PORT}`)
-})
+        app.listen(PORT, () => {
+            console.log(`Server started on port ${PORT}`)
+        })
+
+    } catch(err) {
+
+        console.log("FULL DB ERROR:")
+        console.log(err)
+
     }
-       catch(err){
-        console.log("Error in DB connection",err)
-    }
+
 }
 console.log("MONGO_URI =", process.env.MONGO_URI)
 connectDB()
