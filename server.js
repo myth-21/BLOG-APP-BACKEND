@@ -13,10 +13,13 @@ config()  //process.env
 const app=exp()  //exp() function 
 
 app.use(cors({
- origin: ['http://localhost:5173', 'http://localhost:5174'],
- credentials: true
+    origin: [
+        'http://localhost:5173',
+        'http://localhost:5174',
+        'https://YOUR-FRONTEND-NAME.vercel.app'
+    ],
+    credentials: true
 }))
-
 //add body parser middleware
 app.use(exp.json())
 app.use(cookieParser())
@@ -27,35 +30,33 @@ app.use('/admin-api',adminRoute)
 app.use('/common-api',commonRouter)
 
 //connect to DB
-const connectDB = async () => {
+// 
+const PORT = process.env.PORT || 5000;
 
+const startServer = async () => {
     try {
 
-        console.log("================================")
-        console.log("MONGO_URI VALUE:")
-        console.log(process.env.MONGO_URI)
-        console.log("================================")
+        console.log("Connecting DB...");
 
-        await connect(process.env.MONGO_URI)
+        await connect(process.env.MONGO_URI, {
+            serverSelectionTimeoutMS: 5000
+        });
 
-        console.log("DB connection success")
+        console.log("DB connection success");
 
-        const PORT = process.env.PORT || 5000
+    } catch (err) {
 
-        app.listen(PORT, () => {
-            console.log(`Server started on port ${PORT}`)
-        })
-
-    } catch(err) {
-
-        console.log("FULL DB ERROR:")
-        console.log(err)
+        console.error("DB ERROR:");
+        console.error(err.message);
 
     }
 
-}
-// console.log("MONGO_URI =", process.env.MONGO_URI)
-connectDB()
+    app.listen(PORT, () => {
+        console.log(`Server started on port ${PORT}`);
+    });
+};
+
+startServer();
 //dealing with invalid path
 app.use((req,res,next)=>{
     res.json({message:`${req.url}  is Invalid path`})
