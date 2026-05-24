@@ -29,7 +29,11 @@ app.use('/common-api',commonRouter)
 //connect to DB
 const connectDB=async()=>{
     try{
-        await connect(process.env.MONGO_URI)
+        console.log("START")
+console.log("MONGO_URI VALUE:")
+console.log(process.env.MONGO_URI)
+
+await connect(process.env.MONGO_URI)
         console.log("DB connection success")
         //start http server
         const PORT = process.env.PORT || 5000
