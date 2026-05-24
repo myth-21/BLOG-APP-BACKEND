@@ -42,7 +42,7 @@ app.listen(PORT, () => {
         console.log("Error in DB connection",err)
     }
 }
-
+console.log("MONGO_URI =", process.env.MONGO_URI)
 connectDB()
 
 //dealing with invalid path
