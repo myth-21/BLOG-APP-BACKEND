@@ -1,7 +1,7 @@
-# 🎉 Happy Coding!
-# 🛠️ Blog App - Backend
+# 
+#  Blog App - Backend
 
-## 📖 Overview
+##  Overview
 
 This repository contains the backend for the Blog App.
 
@@ -25,7 +25,7 @@ The backend provides APIs for:
 
 ---
 
-# 🚀 Features
+#  Features
 
 - RESTful API Architecture
 - JWT Authentication
@@ -41,7 +41,7 @@ The backend provides APIs for:
 
 ---
 
-# 📁 Project Structure
+#  Project Structure
 
 ```bash
 BLOG-APP-BACKEND/
@@ -75,7 +75,7 @@ BLOG-APP-BACKEND/
 
 ---
 
-# 📋 Prerequisites
+#  Prerequisites
 
 Before running the project install:
 
@@ -85,9 +85,9 @@ Before running the project install:
 
 ---
 
-# ⚙️ Backend Setup
+#  Backend Setup
 
-## 1️⃣ Initialize Git Repository
+## 1️ Initialize Git Repository
 
 ```bash
 git init
@@ -95,7 +95,7 @@ git init
 
 ---
 
-## 2️⃣ Create `.gitignore`
+## 2️ Create `.gitignore`
 
 Add:
 
@@ -107,7 +107,7 @@ dist
 
 ---
 
-# 📦 Install Required Packages
+# Install Required Packages
 
 ## Main Dependencies
 
@@ -125,7 +125,7 @@ npm install -D nodemon
 
 ---
 
-# 📦 Package Purpose
+#  Package Purpose
 
 | Package | Purpose |
 |----------|----------|
@@ -143,7 +143,7 @@ npm install -D nodemon
 
 ---
 
-# 🔐 Environment Variables
+#  Environment Variables
 
 ## Create `.env`
 
@@ -175,7 +175,7 @@ API_SECRET=your-cloudinary-api-secret
 
 ---
 
-# ▶️ Run the Server
+#  Run the Server
 
 ## Start Normally
 
@@ -193,7 +193,7 @@ npx nodemon server.js
 
 ---
 
-# 🌐 Server URL
+#  Server URL
 
 ```bash
 http://localhost:4000
@@ -201,7 +201,7 @@ http://localhost:4000
 
 ---
 
-# 🔗 API Endpoints
+#  API Endpoints
 
 # Authentication APIs
 
