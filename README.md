@@ -323,7 +323,7 @@ curl http://localhost:4000/user-api/articles
 
 ---
 
-# ⚡ Important Notes
+# Important Notes
 
 - Uses ES6 Modules
 - Enable `"type": "module"` in `package.json`
@@ -333,9 +333,9 @@ curl http://localhost:4000/user-api/articles
 
 ---
 
-# 🚀 Deploy Backend on Render
+#  Deploy Backend on Render
 
-## 1️⃣ Push Backend to GitHub
+## 1️ Push Backend to GitHub
 
 ```bash
 git add .
@@ -347,7 +347,7 @@ git push -u origin main
 
 ---
 
-# 2️⃣ Create Render Account
+# 2️ Create Render Account
 
 Go to:
 
@@ -359,7 +359,7 @@ Login using GitHub.
 
 ---
 
-# 3️⃣ Create New Web Service
+# 3️ Create New Web Service
 
 - Click **New +**
 - Select **Web Service**
@@ -368,7 +368,7 @@ Login using GitHub.
 
 ---
 
-# 4️⃣ Render Configuration
+# 4️ Render Configuration
 
 ## Build Command
 
@@ -384,7 +384,7 @@ node server.js
 
 ---
 
-# 5️⃣ Add Environment Variables in Render
+# 5️ Add Environment Variables in Render
 
 Go to:
 
@@ -408,7 +408,7 @@ API_SECRET=your-cloudinary-secret
 
 ---
 
-# 6️⃣ Deploy Backend
+# 6️ Deploy Backend
 
 Click:
 
@@ -420,7 +420,7 @@ Render automatically deploys the backend.
 
 ---
 
-# 🌍 Backend Production URL
+#  Backend Production URL
 
 Example:
 
@@ -430,7 +430,7 @@ https://blog-app-pvm9.onrender.com
 
 ---
 
-# 🔥 Useful Commands
+# Useful Commands
 
 ## Install Dependencies
 
@@ -460,13 +460,13 @@ git push
 
 ---
 
-# 📝 License
+#  License
 
 This project is licensed under the ISC License.
 
 ---
 
-# 🙏 Acknowledgments
+#  Acknowledgments
 
 - Express.js
 - MongoDB
@@ -476,4 +476,3 @@ This project is licensed under the ISC License.
 
 ---
 
-# 🎉 Happy Coding!
