@@ -6,7 +6,7 @@ Content-Type: application/json
 {
   "firstName": "Anurag",
   "lastName": "Sharma",
-  "email": "anurag12.user@example.com",
+  "email": "anurag123.user@example.com",
   "password": "User@12345",
   "profileImageUrl": "https://example.com/avatars/user.png"
 }
@@ -16,7 +16,7 @@ POST http://localhost:5000/common-api/login
 Content-Type: application/json
 
 {
-  "email": "anurag12.user@example.com",
+  "email": "anurag123.user@example.com",
   "password": "User@12345"
 }
 
@@ -27,7 +27,7 @@ Content-Type: application/json
 {
   "firstName": "Vikas",
   "lastName": "Author",
-  "email": "vikas.author12@example.com",
+  "email": "vikas.author123@example.com",
   "password": "Author@12345",
   "profileImageUrl": "https://example.com/avatars/author.png"
 }
@@ -50,7 +50,7 @@ POST http://localhost:5000/common-api/login
 Content-Type: application/json
 
 {
-  "email": "vikas.author12@example.com",
+  "email": "vikas.author123@example.com",
   "password": "Author@12345"
 }
 
